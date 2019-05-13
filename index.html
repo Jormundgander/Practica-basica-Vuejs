@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Vuejs</title>
+</head>
+<body>
+    
+    <div id="app">
+
+        <div class="row">
+            <div class="col s2">
+                <img src="assets/img/kakashi.jpg" alt="" class="responsive-img pt">
+                <h6>{{ setUsername }}</h6>
+            </div>
+
+            <div class="col s10">
+                <h2 class="center-align">{{ setTemplateName }}</h2>
+                
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6" :class="[colorBackground1]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusamus? Ipsam saepe provident, sequi qui molestias tenetur labore odio ab deleniti fugit dolor eum debitis atque natus excepturi quod soluta!
+                    </div>
+                    <div class="col s12 m6 l6" :class="[colorBackground2]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusamus? Ipsam saepe provident, sequi qui molestias tenetur labore odio ab deleniti fugit dolor eum debitis atque natus excepturi quod soluta!
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h2 class="center-align">Options</h2>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <div class="input-field">
+                            <label for="templatename">Write the template name</label>
+                            <input type="text" name="templatename" v-model="templateName">
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="input-field">
+                            <label for="username">Write your username</label>
+                            <input type="text" name="username" v-model="username">
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="input-field">
+                            <select name="" id="" v-model="colorBackground1">
+                                <option value="" selected disabled>Choose a color for div1</option>
+                                <option value="blue darken-1">Blue</option>
+                                <option value="red darken-1">Red</option>
+                                <option value="yellow darken-1">Yellow</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="input-field">
+                            <select name="" id="" v-model="colorBackground2">
+                                <option value="" selected disabled>Choose a color for div2</option>
+                                <option value="blue darken-1">Blue</option>
+                                <option value="red darken-1">Red</option>
+                                <option value="yellow darken-1">Yellow</option>
+                            </select>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/practica.js"></script>
+
+</body>
+</html>
