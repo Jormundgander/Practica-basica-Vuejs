@@ -9,16 +9,16 @@ const app = new Vue({
     computed: {
         setTemplateName(){
             if(this.templateName == ''){
-                return this.templateName = 'Reactive Template';
+                return template = 'Reactive Template';
             } else {
-                return this.templateName;
+                return template = this.templateName;
             }
         },
         setUsername(){
             if(this.username == ''){
-                return this.username = 'Username';
+                return username = 'Username';
             } else {
-                return this.username;
+                return username = this.username;
             }
         }
     }
